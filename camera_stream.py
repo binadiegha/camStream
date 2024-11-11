@@ -26,6 +26,6 @@ async def video_stream(websocket, path):
 start_server = websockets.serve(video_stream, '0.0.0.0', 8082)
 print("WebSocket server started on ws://0.0.0.0:8082")
 
-# Run the server and start stream
+# Run the server and start sockets stream
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
